@@ -29,7 +29,7 @@ export const project = {
   ],
   links: {
     live: "https://diabetes-classificationn.streamlit.app/",
-    repo: "https://github.com/iamzizi16/Projek-Klasifikasi-Diabetes",
+    repo: "https://github.com/rifkyfbrn07/Projek-Klasifikasi-Diabetes",
   },
 };
 

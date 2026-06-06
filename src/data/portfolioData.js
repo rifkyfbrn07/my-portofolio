@@ -1,20 +1,6 @@
 // ─── Portfolio Data (single source of truth for site content) ────
-//
-// This is the LIVE data the site renders and the AI assistant reads. It is
-// imported by `src/services/aiContext.js` and `src/components/ChatWidget.jsx`.
-//
-// CUSTOMIZING: edit the values below with your own details. For a clean,
-// fully-commented starter template (with guidance on every field), see
-// `src/data/examplePortfolioData.js`. See also `docs/customization.md`.
-//
-// FIELDS TO EDIT:
-//   profile.name / role / bio / location / email / socials  → your identity
-//   experience[]   → your work / organization / education history
-//   techStack[]    → your skills, grouped by `category`
-//   projects[]     → short project summaries (keep `slug` in sync with
-//                    projectMeta.js + projectDetailsData.js)
-//   achievements[] → awards / hackathons (optional)
-//   capabilities[] → high-level specializations
+// This is the LIVE data the site renders and the AI assistant reads.
+
 export const PORTFOLIO_DATA = {
     profile: {
         name: "Rifky Febrian Iskandar",
@@ -23,112 +9,150 @@ export const PORTFOLIO_DATA = {
         location: "Ciamis, West Java, Indonesia",
         email: "febrianrifky590@gmail.com",
         socials: {
-            github: "https://github.com/iamzizi16",
+            github: "https://github.com/rifkyfbrn07",
             linkedin: "https://www.linkedin.com/in/rifkyfbrn07/",
             x: "https://x.com/RifkyFe40920714",
             instagram: "https://www.instagram.com/rifkyfbrn07"
         }
     },
-    experience: [
+    organization: [
         {
-            title: "Division Head - OSIS SMK TI BAZMA",
-            period: "Sep 2023 - Feb 2025",
-            description: [
-                "Led a student division in planning and executing school programs and events.",
-                "Coordinated team members to ensure effective collaboration and successful event delivery.",
-                "Strengthened leadership, organizational, and project management skills."
-            ]
+            title: "Forum OSIS Jawa Barat",
+            role: "Member",
+            period: "September 2023 - November 2025",
+            description: "Contributed to regional student collaboration programs, event coordination, and documentation while strengthening teamwork and communication skills."
         },
         {
-            title: "Participant - Raimuna Cabang Kabupaten Bogor 2024",
-            period: "Dec 2024",
-            description: [
-                "Participated in leadership and teamwork development programs at the regional scouting event.",
-                "Improved communication, adaptability, and collaborative problem-solving through various challenges."
-            ]
+            title: "OSIS SMK TI Bazma",
+            role: "Division Staff",
+            period: "September 2023 - February 2024",
+            description: "Supported school events and student programs through planning and team coordination."
         },
         {
-            title: "Member - Forum OSIS Jawa Barat (FOSJABAR J5 & J6)",
-            period: "Sep 2023 - Nov 2025",
-            description: [
-                "Contributed to regional student collaboration programs and organizational initiatives.",
-                "Assisted in coordinating events and strengthening communication across schools.",
-                "Developed teamwork, responsibility, and leadership through active participation."
-            ]
+            title: "OSIS SMK TI Bazma",
+            role: "Division Head",
+            period: "February 2024 - February 2025",
+            description: "Led a division in organizing educational and social events while managing team responsibilities and project execution."
+        },
+        {
+            title: "Raimuna Kabupaten Bogor",
+            role: "Participant",
+            period: "December 2024",
+            description: "Participated in leadership development, teamwork activities, and collaborative problem-solving challenges."
         }
     ],
-    techStack: [
-        { name: "Next.js", category: "Frontend" },
-        { name: "React", category: "Frontend" },
-        { name: "TypeScript", category: "Frontend" },
-        { name: "JavaScript", category: "Frontend" },
-        { name: "Tailwind CSS", category: "Frontend" },
-        { name: "HTML5", category: "Frontend" },
-        { name: "CSS3", category: "Frontend" },
-        { name: "Laravel", category: "Backend" },
-        { name: "REST API", category: "Backend" },
-        { name: "MySQL", category: "Database" },
-        { name: "Git", category: "Tools" },
-        { name: "GitHub", category: "Tools" },
-        { name: "VS Code", category: "Tools" },
-        { name: "Postman", category: "Tools" },
-        { name: "Figma", category: "Tools" },
-        { name: "Linux (Ubuntu)", category: "Additional Knowledge" },
-        { name: "Basic Networking", category: "Additional Knowledge" },
-        { name: "Cyber Security Fundamentals", category: "Additional Knowledge" },
-        { name: "Capture The Flag (CTF) Basics", category: "Additional Knowledge" }
+    techStack: {
+        frontend: [
+            "Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"
+        ],
+        backend: [
+            "Laravel", "PHP", "REST API", "MySQL"
+        ],
+        tools: [
+            "Git", "GitHub", "VS Code", "Postman", "Figma"
+        ],
+        learning: [
+            "Linux", "Networking", "Cyber Security Fundamentals", "Capture The Flag"
+        ]
+    },
+    features: [
+        { id: "01", title: "Responsive UI" },
+        { id: "02", title: "Reusable Components" },
+        { id: "03", title: "REST API Integration" },
+        { id: "04", title: "Database Design" },
+        { id: "05", title: "Git Workflow" },
+        { id: "06", title: "Laravel Backend" },
+        { id: "07", title: "Modern Frontend", subtitle: "Next.js, React, Tailwind CSS" },
+        { id: "08", title: "Always Learning" }
+    ],
+    achievements: [
+
+        {
+            year: "2025",
+            title: "Built Personal Portfolio Website",
+            description: "Designed and developed a modern portfolio website featuring responsive layouts.",
+            project: "Web Development",
+            team: "Individual",
+            track: "Frontend",
+            techStack: ["Next.js", "Tailwind CSS"]
+        },
+        {
+            year: "2025",
+            title: "Developed Mini E-Commerce",
+            description: "Built a responsive e-commerce interface with reusable components.",
+            project: "Web Development",
+            team: "Individual",
+            track: "Frontend",
+            techStack: ["React", "TypeScript"]
+        },
+        {
+            year: "2024",
+            title: "WorldSkills ASEAN Cyber Security Selection",
+            description: "Participated in the WorldSkills ASEAN Cyber Security Selection.",
+            project: "Cyber Security",
+            team: "Team",
+            track: "Cyber Security",
+            techStack: ["Linux", "Networking", "Cyber Security"]
+        },
+        {
+            year: "2024",
+            title: "Participated in Raimuna Kabupaten Bogor",
+            description: "Participated in leadership development and teamwork activities.",
+            project: "Scouting",
+            team: "Participant",
+            track: "Leadership",
+            techStack: []
+        },
+        {
+            year: "2023",
+            title: "Started Web Development Journey",
+            description: "Began learning foundational web technologies and programming concepts.",
+            project: "Learning",
+            team: "Individual",
+            track: "Frontend",
+            techStack: ["HTML", "CSS", "JavaScript"]
+        }
     ],
     projects: [
         {
             slug: "personal-portfolio-website",
             title: "Personal Portfolio Website",
             category: "Web Application",
-            description: "Designed and developed a modern portfolio website featuring responsive layouts, interactive UI components, and optimized performance to showcase projects and technical skills."
+            description: "Designed and developed a modern portfolio website featuring responsive layouts, interactive UI components, and optimized performance to showcase projects and technical skills.",
+            techStack: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+            github: "https://github.com/rifkyfbrn07/my-portofolio",
+            live: "https://rifkyfbrn07.github.io/my-portofolio",
+            image: "/profile.webp"
         },
         {
             slug: "mini-e-commerce",
             title: "Mini E-Commerce",
             category: "Web Application",
-            description: "Built a responsive e-commerce interface with reusable components and structured frontend architecture, focusing on maintainability and user experience."
+            description: "Built a responsive e-commerce interface with reusable components and structured frontend architecture, focusing on maintainability and user experience.",
+            techStack: ["React", "Tailwind CSS", "TypeScript"],
+            github: "https://github.com/rifkyfbrn07",
+            live: "",
+            image: "/profile.webp"
         },
         {
             slug: "weather-app",
             title: "Weather App",
             category: "Web Application",
-            description: "Developed a weather application with API integration to display real-time weather information through a clean and intuitive interface."
+            description: "Developed a weather application with API integration to display real-time weather information through a clean and intuitive interface.",
+            techStack: ["React", "JavaScript", "REST API"],
+            github: "https://github.com/rifkyfbrn07",
+            live: "",
+            image: "/profile.webp"
         },
         {
-            slug: "web-esports-landing-page",
-            title: "Web Esports Landing Page",
-            category: "Landing Page",
-            description: "Created an esports-themed landing page to explore responsive layouts, modern UI design, and interactive frontend implementation."
+            slug: "sensor-app",
+            title: "Sensor App",
+            category: "Web Application",
+            description: "A Laravel-based web application for managing and monitoring sensor data, built with modern web development practices.",
+            techStack: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
+            github: "https://github.com/rifkyfbrn07/sensor-app",
+            live: "",
+            image: "/profile.webp"
         }
-    ],
-    achievements: [
-        {
-            title: "WorldSkills ASEAN Cyber Security Selection",
-            project: "Cyber Security",
-            description: "Selected as a participant in the WorldSkills ASEAN Cyber Security Selection.",
-            team: "Individual",
-            track: "Cyber Security",
-            techStack: ["Linux", "Networking", "Cyber Security"],
-            links: {}
-        },
-        {
-            title: "Capture The Flag (CTF)",
-            project: "CTF Challenges",
-            description: "Completed multiple introductory Capture The Flag (CTF) challenges to strengthen cybersecurity fundamentals.",
-            team: "Individual",
-            track: "Cyber Security",
-            techStack: ["CTF", "Security"],
-            links: {}
-        }
-    ],
-    capabilities: [
-        "Frontend Web Development",
-        "Responsive Web Design",
-        "UI/UX Implementation",
-        "Version Control",
-        "Cyber Security Fundamentals"
     ]
 };

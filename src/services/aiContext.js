@@ -17,8 +17,9 @@ const PROJECT_DETAILS = PROJECT_DETAILS_DATA;
  * @returns {string}
  */
 function serializeExperience() {
-  return PORTFOLIO_DATA.experience
-    .map(exp => `- ${exp.title} (${exp.period}): ${exp.description.join(' ')}`)
+  if (!PORTFOLIO_DATA.organization) return '';
+  return PORTFOLIO_DATA.organization
+    .map(exp => `- ${exp.title} (${exp.period}): ${exp.description}`)
     .join('\n');
 }
 
@@ -27,12 +28,8 @@ function serializeExperience() {
  * @returns {string}
  */
 function serializeTechStack() {
-  const grouped = {};
-  for (const tech of PORTFOLIO_DATA.techStack) {
-    if (!grouped[tech.category]) grouped[tech.category] = [];
-    grouped[tech.category].push(tech.name);
-  }
-  return Object.entries(grouped)
+  if (!PORTFOLIO_DATA.techStack) return '';
+  return Object.entries(PORTFOLIO_DATA.techStack)
     .map(([category, techs]) => `- ${category}: ${techs.join(', ')}`)
     .join('\n');
 }
@@ -65,15 +62,9 @@ function serializeAchievements() {
   if (!PORTFOLIO_DATA.achievements?.length) return 'No achievements listed.';
   return PORTFOLIO_DATA.achievements
     .map(a => [
-      `- ${a.title}`,
-      `  Project: ${a.project}`,
+      `- ${a.title} (${a.year})`,
       `  Description: ${a.description}`,
-      `  Team: ${a.team}`,
-      `  Track: ${a.track}`,
-      `  Tech: ${a.techStack.join(', ')}`,
-      a.links?.live ? `  Live: ${a.links.live}` : '',
-      a.links?.github ? `  Repo: ${a.links.github}` : '',
-      a.links?.devfolio ? `  Devfolio: ${a.links.devfolio}` : '',
+      a.techStack?.length ? `  Tech: ${a.techStack.join(', ')}` : '',
     ].filter(Boolean).join('\n'))
     .join('\n');
 }
@@ -83,8 +74,8 @@ function serializeAchievements() {
  * @returns {string}
  */
 function serializeCapabilities() {
-  if (!PORTFOLIO_DATA.capabilities?.length) return 'No capabilities listed.';
-  return PORTFOLIO_DATA.capabilities.map(c => `- ${c}`).join('\n');
+  if (!PORTFOLIO_DATA.features?.length) return 'No capabilities listed.';
+  return PORTFOLIO_DATA.features.map(f => `- ${f.title}`).join('\n');
 }
 
 function normalize(text) {

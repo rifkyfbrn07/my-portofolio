@@ -29,7 +29,7 @@ export const project = {
     "Enhances citizen experience with clear, consistent, and human-like responses - bringing public services closer through AI technology.",
   ],
   links: {
-    repo: "https://github.com/iamzizi16/chatbot_ai",
+    repo: "https://github.com/rifkyfbrn07/chatbot_ai",
   },
 };
 

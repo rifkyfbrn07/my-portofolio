@@ -19,54 +19,54 @@ export const PROJECT_DETAILS_DATA = {
     impact: [
       "Provides a central hub for showcasing projects and skills."
     ],
-    links: {}
+    links: { live: "https://rifkyfbrn07-porto.vercel.app/" }
   },
-  "mini-e-commerce": {
-    title: "Mini E-Commerce",
+    "mini-e-commerce": {
+      title: "Mini E-Commerce",
+      category: "Web Application",
+      tagline: "Built a responsive e-commerce interface with reusable components and structured frontend architecture, focusing on maintainability and user experience.",
+      year: "2025",
+      stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+      features: [
+        "Reusable UI components",
+        "Structured frontend architecture",
+        "Responsive e-commerce interface"
+      ],
+      impact: [
+        "Improves maintainability and user experience in online shopping."
+      ],
+      links: {}
+    },
+    "weather-app": {
+      title: "Weather App",
+      category: "Web Application",
+      tagline: "Developed a weather application with API integration to display real-time weather information through a clean and intuitive interface.",
+      year: "2025",
+      stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+      features: [
+        "Real-time weather data integration",
+        "Clean and intuitive UI",
+        "Location-based weather fetching"
+      ],
+      impact: [
+        "Helps users get quick and accurate weather updates."
+      ],
+      links: {}
+    },
+    "sensor-app": {
+    title: "Sensor App",
     category: "Web Application",
-    tagline: "Built a responsive e-commerce interface with reusable components and structured frontend architecture, focusing on maintainability and user experience.",
+    tagline: "A Laravel-based web application for managing and monitoring sensor data.",
     year: "2025",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    stack: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
     features: [
-      "Reusable UI components",
-      "Structured frontend architecture",
-      "Responsive e-commerce interface"
+      "Backend architecture with Laravel",
+      "Sensor data management and processing",
+      "Responsive user interface"
     ],
     impact: [
-      "Improves maintainability and user experience in online shopping."
+      "Streamlines the collection and visualization of sensor data."
     ],
-    links: {}
-  },
-  "weather-app": {
-    title: "Weather App",
-    category: "Web Application",
-    tagline: "Developed a weather application with API integration to display real-time weather information through a clean and intuitive interface.",
-    year: "2025",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    features: [
-      "Real-time weather data integration",
-      "Clean and intuitive UI",
-      "Location-based weather fetching"
-    ],
-    impact: [
-      "Helps users get quick and accurate weather updates."
-    ],
-    links: {}
-  },
-  "web-esports-landing-page": {
-    title: "Web Esports Landing Page",
-    category: "Landing Page",
-    tagline: "Created an esports-themed landing page to explore responsive layouts, modern UI design, and interactive frontend implementation.",
-    year: "2025",
-    stack: ["HTML", "CSS", "JavaScript"],
-    features: [
-      "Esports-themed UI design",
-      "Responsive layout for multiple devices",
-      "Interactive elements with JavaScript"
-    ],
-    impact: [
-      "Provides an engaging entry point for an esports platform."
-    ],
-    links: {}
+    links: { github: "https://github.com/rifkyfbrn07/sensor-app" }
   }
-};
+  };

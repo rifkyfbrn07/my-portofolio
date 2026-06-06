@@ -33,7 +33,7 @@ export const project = {
     "Provides vendor quality insights through ratings and purchase history, making user decisions more confident and data-driven.",
   ],
   links: {
-    repo: "https://github.com/iamzizi16/user-canteen",
+    repo: "https://github.com/rifkyfbrn07/user-canteen",
   },
 };
 

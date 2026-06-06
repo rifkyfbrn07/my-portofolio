@@ -125,7 +125,7 @@ const Footer = memo(function Footer() {
 
               {[
                 { label: 'Email', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=febrianrifky590@gmail.com', icon: Mail },
-                { label: 'GitHub', href: 'https://github.com/iamzizi16', icon: Github },
+                { label: 'GitHub', href: 'https://github.com/rifkyfbrn07', icon: Github },
                 { label: 'LinkedIn', href: 'https://www.linkedin.com/in/rifkyfbrn07/', icon: Linkedin },
               ].map((link) => (
                 <a

@@ -25,9 +25,9 @@ export const PROJECT_META = [
   },
   {
     id: 4,
-    slug: "web-esports-landing-page",
-    title: "Web Esports Landing Page",
-    category: "Landing Page",
+    slug: "sensor-app",
+    title: "Sensor App",
+    category: "Web Application",
     color: "bg-purple-400",
     img: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
   }
