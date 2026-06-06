@@ -170,9 +170,8 @@ const AboutSection = memo(function AboutSection() {
                 <div className="absolute inset-0 bg-black/[0.12] group-hover:bg-transparent transition-colors duration-700 z-10 mix-blend-multiply pointer-events-none" />
 
                 <picture>
-                  <source srcSet="/profilee.webp" type="image/webp" />
                   <img
-                    src="/profilee.webp"
+                    src="/sindoro.jpg"
                     alt="Rifky Febrian Iskandar"
                     loading="lazy"
                     decoding="async"
